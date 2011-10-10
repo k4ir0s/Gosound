@@ -14,7 +14,7 @@
 
 *Language: C++
 
-*Description : Gosound project is an Open source software for music production.
+*Description : 		  Gosound project is an Open source software for music production.
 			  At the first time, I'm trying to create a complete drum sampler called: Alphaline VST.
 			  Alphaline VST is based only on PAD manipulation, each PAD give a sound and sample it on your computer.
 			  The originality of this VST is that you don't need to stack several clip to compose,
