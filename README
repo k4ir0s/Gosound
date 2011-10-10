@@ -4,8 +4,8 @@
 |  | |_ | |  |  |  |     \   \    |  |  |  | |  |  |  | |  . `  | |  |  |  |
 |  |__| | |  `--'  | .----)   |   |  `--'  | |  `--'  | |  |\   | |  '--'  |
  \______|  \______/  |_______/     \______/   \______/  |__| \__| |_______/ 
-<<<<<<< HEAD
-********************************************************************************************************************
+
+***********************************************************************************************************************************
 *Project : Gosound
 
 *Author : Nizar Bousebsi
@@ -20,25 +20,7 @@
 			  The originality of this VST is that you don't need to stack several clip to compose,
 			  but you describe yours pattern with alphabet
 			  like this: If A is a kick and Snare is C that gives -> A-C-A-C.
-********************************************************************************************************************
-=======
-
-****************************************************************************************************************************************************************
-*Project : Gosound																	       *
-																			       *
-*Author : Nizar Bousebsi																       *	
-																			       *	
-*Date : 2011-2012																	       *					
-																			       *	
-*Description :            Gosound project is an Open source software for music production.								       *
-			  At the first time, I'm trying to create a complete drum sampler called: Alphaline VST.					       *
-			  Alphaline VST is based only on PAD manipulation, each PAD give a sound and sample it on your computer.			       *
-			  The originality of this VST is that you don't need to stack several clip to compose, but you describe yours pattern with alphabet    *
-			  like this: If A is a kick and Snare is C that gives -> A-C-A-C.								       *
-																			       *		
-****************************************************************************************************************************************************************
-
->>>>>>> 33714849fb8815b838ff9c42ca8170f4008d0a69
+***********************************************************************************************************************************
   _______   ______        _______.  ______    __    __  .__   __.  _______  
  /  _____| /  __  \      /       | /  __  \  |  |  |  | |  \ |  | |       \ 
 |  |  __  |  |  |  |    |   (----`|  |  |  | |  |  |  | |   \|  | |  .--.  |
