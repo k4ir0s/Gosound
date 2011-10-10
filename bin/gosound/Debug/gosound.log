@@ -1,0 +1,29 @@
+﻿Build started 10/10/2011 13:20:32.
+     1>Project "C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\gosound\gosound.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\gosound.unsuccessfulbuild".
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /IC:\Qt\4.7.4\include /I.\GeneratedFiles\Debug /IC:\Qt\4.7.4\include\qtmain /IC:\Qt\4.7.4\include\QtCore /IC:\Qt\4.7.4\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\\gosound.exe" /NOLOGO /LIBPATH:C:\Qt\4.7.4\lib qtmaind.lib QtCored4.lib QtGuid4.lib fmodexL_vc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\gosound.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\gosound.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\gosound.lib" /MACHINE:X86 Debug\moc_gosound.obj
+         Debug\qrc_gosound.obj
+         Debug\gosound.obj
+         Debug\main.obj
+         Debug\sound.obj
+         LINK : C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\\gosound.exe not found or not built by the last incremental link; performing full link
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with 'qtmaind.lib(qtmain_win.obj)' or at 'C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\vc90.pdb'; linking object as if no debug info
+         gosound.vcxproj -> C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\gosound.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\\gosound.exe;#1" /manifest Debug\gosound.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\gosound.unsuccessfulbuild".
+         Touching "Debug\gosound.lastbuildstate".
+     1>Done Building Project "C:\Users\Bousebsi\Documents\Nizar\project\Gosound\gosound\gosound\gosound.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.92

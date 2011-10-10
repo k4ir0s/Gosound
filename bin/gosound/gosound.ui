@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gosoundClass</class>
+ <widget class="QMainWindow" name="gosoundClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>732</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Gosound - Alphaline VST for drummer v 1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Data/Img/GosoundIcone.bmp</normaloff>../Data/Img/GosoundIcone.bmp</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>757</width>
+      <height>204</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Data/Img/GosoundHeader.png</pixmap>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonA">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="GosoundAlphaLine">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>210</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Arial&quot;;
+color: &quot;white&quot;;
+background-color: &quot;#333333&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonB">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>250</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonN">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>550</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>N</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonF">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>350</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>F</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonJ">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>450</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>J</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonM">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>550</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>M</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonI">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>450</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>I</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonE">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>E</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonG">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>350</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>G</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonC">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>250</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonK">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>450</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>K</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButttonO">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>550</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>O</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="GosoundCopyright">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>630</y>
+      <width>311</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Arial&quot;;
+color: &quot;#0099FF&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Copyright All rights © reserved - Gosound 2011-2012</string>
+    </property>
+    <property name="indent">
+     <number>-1</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonL">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>450</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>L</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonH">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>350</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>H</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonD">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>250</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GosoundButtonP">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>550</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#666666&quot;;
+font: 30pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>210</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: &quot;#0099FF&quot;;
+font: 10pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Drum it !</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="GosoundMenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>732</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="defaultUp">
+    <bool>true</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuDisplay">
+    <property name="title">
+     <string>Display</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuProject">
+    <property name="title">
+     <string>Project</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFX">
+    <property name="title">
+     <string>FX</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuDisplay"/>
+   <addaction name="menuProject"/>
+   <addaction name="menuFX"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuAbout"/>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gosound.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>GosoundButtonA</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundA()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonB</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>288</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonC</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundC()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>418</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonD</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundD()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonE</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundE()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>394</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonF</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>381</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonG</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundG()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonH</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundH()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>524</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonI</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>501</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonJ</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundJ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>505</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>210</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonK</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundK()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonL</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundL()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonM</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>582</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>581</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonN</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundN()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>581</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>580</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButttonO</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundO()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>587</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>587</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GosoundButtonP</sender>
+   <signal>clicked()</signal>
+   <receiver>gosoundClass</receiver>
+   <slot>PlaySoundP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>590</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>529</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>PlaySoundA()</slot>
+  <slot>PlaySoundB()</slot>
+  <slot>PlaySoundC()</slot>
+  <slot>PlaySoundD()</slot>
+  <slot>PlaySoundE()</slot>
+  <slot>PlaySoundF()</slot>
+  <slot>PlaySoundG()</slot>
+  <slot>PlaySoundH()</slot>
+  <slot>PlaySoundI()</slot>
+  <slot>PlaySoundJ()</slot>
+  <slot>PlaySoundK()</slot>
+  <slot>PlaySoundL()</slot>
+  <slot>PlaySoundM()</slot>
+  <slot>PlaySoundN()</slot>
+  <slot>PlaySoundO()</slot>
+  <slot>PlaySoundP()</slot>
+ </slots>
+</ui>
