@@ -19,7 +19,8 @@
 			  Alphaline VST is based only on PAD manipulation, each PAD give a sound and sample it on your computer.
 			  The originality of this VST is that you don't need to stack several clip to compose,
 			  but you describe yours pattern with alphabet
-			  like this: If A is a kick and Snare is C that gives -> A-C-A-C.
+			  like this: If A is a kick and C is a snare, that gives -> A-C-A-C for a simple drum beat.
+			  With a 4x4 matrice and 16 channels you can play any other sound like hihat, percussions, note ...
 ***********************************************************************************************************************************
   _______   ______        _______.  ______    __    __  .__   __.  _______  
  /  _____| /  __  \      /       | /  __  \  |  |  |  | |  \ |  | |       \ 
